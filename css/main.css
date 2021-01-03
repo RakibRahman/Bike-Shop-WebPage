@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  background: #b1c24e;
+  padding: 15px 10px;
+}
+
+header .title {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+
+nav {
+  background: #90b503;
+  padding: 15px 10px;
+}
+
+nav form input {
+  margin-left: 15px;
+  width: 20%;
+  padding: 3px;
+  background: transparent;
+  border: 2px solid whitesmoke;
+}
+
+nav form button {
+  padding: 3px;
+  background: #f784a1;
+  color: #1d1349;
+  border: 2px solid whitesmoke;
+}
+
+nav form button:hover {
+  background: chartreuse;
+  cursor: pointer;
+}
+
+main {
+  padding: 15px 10px;
+}
+
+main .products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
+}
+
+main .products div {
+  border: 1px solid #90b503;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .products div:hover {
+  background: chartreuse;
+  color: #1a9bfc;
+  cursor: pointer;
+}
+
+main .products div span {
+  font-size: 5rem;
+  vertical-align: middle;
+  line-height: 2;
+}
+
+main .products div h3,
+main .products div p {
+  margin: 10px 0;
+}
+
+main .why {
+  margin-top: 20px;
+  background: #dbfdbc;
+  padding: 20px 0;
+}
+
+main .why h2 {
+  color: #767676;
+  text-align: center;
+}
+
+main .why p {
+  width: 60%;
+  max-width: 80ch;
+  margin: 0 auto 10px auto;
+  line-height: 1.4;
+}
+
+footer {
+  background: #69fcce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 10px;
+}
+
+footer ul {
+  margin-right: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media all and (max-width: 37.5em) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
